@@ -1,0 +1,20 @@
+<h1>Check this out.</h1>
+<p>My name is <strong>{{me.name}}</strong>. 
+  I am <strong>{{me.age}}</strong>.
+  And I come from <strong>{{me.town}}</strong>, 
+  <strong>{{me.country}}</strong></p>
+
+
+  
+  {{#if visitor}}
+  <p>Hello {{visitor.first}} {{visitor.last}}</p>
+  {{/if}}
+
+  <form action="/user" method="POST">
+  <input type="text"   name="username" placeholder="Username" class="form-contol">
+  <input type="number" name="age"      placeholder="Your age" class= "form-control">
+  <input type="email"  name="email"    placeholder="Your email" class="form-control">
+
+  <button type="submit" class="btn btn-info">Submit</button>
+  </form>
+
